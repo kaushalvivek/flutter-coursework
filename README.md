@@ -15,7 +15,7 @@ The course is paid, you can find it at the following link:
 
 The course comprises of rougly 38.5 hours of non-legacy material, divided into 17 sections. A rough timeline for when notes and code for each section would be uploaded is as follows:
 
-**Section 1** : 31st Aug, 2019  
+**Section 1** : 1st Sept, 2019  
 **Section 2** : 6th Sept, 2019  
 **Section 3** : 8th Sept, 2019  
 **Section 4** : 15th Sept, 2019  
