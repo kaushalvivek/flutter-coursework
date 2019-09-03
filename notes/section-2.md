@@ -46,4 +46,13 @@
 
 ## Building Widget Tree
 
-- 
+- ```Scaffold```widget creates a base page design for the app.
+  - ```appBar``` is a named variable for creating appbar in scaffold.
+  - ```body``` takes the body of the app.
+- Code with `,` after parenthesis, this is helpful for auto-formatting.
+- We'll be creating a quiz application to learn how widget trees work in Flutter.
+- Different types of widget in flutter:
+  - Visible to users, like ```Text```
+  - Invisible widgets, like ```Row, Column``` etc, that help us with structuring our app.
+- The ```Container``` widget belongs to both categories as it can be made visible by adding specifications.
+- Dart has lists declared using [] square brackets. ```<Widget>``` tells flutter that the list contains widgets.
