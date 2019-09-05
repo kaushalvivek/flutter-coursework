@@ -56,3 +56,20 @@
   - Invisible widgets, like ```Row, Column``` etc, that help us with structuring our app.
 - The ```Container``` widget belongs to both categories as it can be made visible by adding specifications.
 - Dart has lists declared using [] square brackets. ```<Widget>``` tells flutter that the list contains widgets.
+
+## Connecting Functions and Buttons
+
+- Button widgets' ```onPressed:``` takes a function as input.
+- Declare this functions within class.
+- When assigning a function to be executed on the press of a button, use the syntax : ```onPressed: functionName``` and not ```onPressed: functionName()```, as the latter syntax does not assign the function to be executed on button press, it executes the function on compilation and assigns its value to the button press, which doesn't make much sense.
+- The above rule is for named functions. Another way is through a function shortcut -- for anonymous functions that are never repeated. Declared as ```onPressed: () => print("Anonymous function called.");``` Useful when the function is not called anywhere else, and is not ugly to write.
+
+**```build``` is excuted eveytime the screen changes. Any component of it.**
+
+## Using Stateful Widgets for Dynamic Update
+
+- **State** can be widget state or app state.
+- We have stateless widgets because not all content on screen needs to be dynamic.
+- A Stateful widget is a combination of a stateless widget class and a (bunch of) state class(es).
+- Created state class needs to be binded to its Stateful Widget class, this is done in two steps, a ```createState``` method in the Stateless Widget and in the state's declarations as in  : ```class StateName extends State<ClassName>```
+- Flutter does not recreate the user interface on every user interaction, as that would be catastrophic for performance. It needs to be told that something important has been changed, and the UI needs to be recreated, this is done through the ```setState(() {this = that;});``` method. 
