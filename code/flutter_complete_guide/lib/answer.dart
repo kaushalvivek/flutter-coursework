@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
   final Function handler;
+  final String text;
 
-  Answer(this.handler);
+  Answer(this.handler, this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class Answer extends StatelessWidget {
       child: RaisedButton(
         color: Colors.blue,
         textColor: Colors.white,
-        child: Text('Answer 1'),
+        child: Text(text),
         onPressed: handler,
       ),
     );

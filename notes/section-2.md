@@ -96,3 +96,14 @@
 
 - Maps are data structures in Dart that allow for the storage of key-value pairs. Declared as ```{}```, or by using ```Map()```.
 - A combination of maps and list, nested on each other can be used very effectively to store complex data.
+- A list can be mapped to generate widgets and/or other components for each item in the list. This is done using ```list.map((list_item) {return ...}).toList()```
+- Dart might not always recognise that a list is being passed to map, hence sometimes it needs to be specified, as in ```(list_name as List<Strings>).map()``` for a list of strings.
+- ```...``` is called the thread operator, which takes output from a list and adds it to another list as individual items, rather than adding a nested list.
+
+## Final vs Const
+
+- ```final``` is used when our value doesn't change from the point of time the program runs, it can be initialised though. Value is locked-in upon code execution. It's a run-time constant value.
+- ```const``` is used for compile-time constant, as in, values that are coded in and known at the time of compilation.
+- All compile-time constants are run-time constants.
+- ```const``` can be added infront of the variable name, or infront of the value. This translates to storing the variable address to be constant and stroring the value as a constant respectively.
+- ```.add()``` adds a new element to a list. New elements can't be added to unmodifiable lists.
