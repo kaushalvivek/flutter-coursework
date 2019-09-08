@@ -73,3 +73,26 @@
 - A Stateful widget is a combination of a stateless widget class and a (bunch of) state class(es).
 - Created state class needs to be binded to its Stateful Widget class, this is done in two steps, a ```createState``` method in the Stateless Widget and in the state's declarations as in  : ```class StateName extends State<ClassName>```
 - Flutter does not recreate the user interface on every user interaction, as that would be catastrophic for performance. It needs to be told that something important has been changed, and the UI needs to be recreated, this is done through the ```setState(() {this = that;});``` method. 
+
+**Leading ```_``` tells Flutter that the class is Private. Eg: ```_MyAppState```**
+
+**```final``` keyword tells Flutter that the variable's value won't be altered after initialization.**
+
+## New Custom Widget
+
+- Custom widgets can be created in separate files (*or same file*).
+- Advisable to create custom widgets, as regeneration is faster.
+- Use constructor in new stateless/stateful class to pass input variables if necessary -- check code section for example.
+- Various styling options available. Check Flutter documentation or attached code for more info.
+
+**Dart allows for multiple constructors in a class, additional constructors can be specified using ```ClassName.something()``` syntax, and its used to add custom default values to input arguments.**
+
+## Passing Callback Functions
+
+- Flutter allows you to pass functions to classes in their constructors, just like you'd pass a variable as an argument.
+- When two different classes -- usually stateless, are being coordinated in a separate class that's stateful, its called 'lifting the state up'.
+
+## Map and Widget Mapping
+
+- Maps are data structures in Dart that allow for the storage of key-value pairs. Declared as ```{}```, or by using ```Map()```.
+- A combination of maps and list, nested on each other can be used very effectively to store complex data.
