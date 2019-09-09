@@ -107,3 +107,18 @@
 - All compile-time constants are run-time constants.
 - ```const``` can be added infront of the variable name, or infront of the value. This translates to storing the variable address to be constant and stroring the value as a constant respectively.
 - ```.add()``` adds a new element to a list. New elements can't be added to unmodifiable lists.
+
+**```if() {} and ternary operator -- ? : ; --declared normally in Dart.**
+
+## Splitting Widgets
+
+- In flutter, as a rule of thumb, it is always encouraged to build more custom widgets, where the alternative is to have large nested widgets. Better to have small widgets than large nested widgets. Better performance, more readable.
+- Splitting done by creating new custom widgets for long sections. Passing information between widgets done through name/sequential arguments and suitable constructors.
+
+**When passing a value to a funcion that doesn't accept arguments because of the manner in which it is being declared -- such as in ```onPressed:```, pass an anonymous function ```() => functionName(argument)``` in this manner, hence passing the required function with the required argument as a new anonymous function.**
+
+## Getter
+
+- A getter is somewhere between a variable and a function.
+- It can't have arguments passed to it and is referenced as a variable.
+- Inside it, it is pretty much like a function with calculations/logic and a return.
