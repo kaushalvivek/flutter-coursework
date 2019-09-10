@@ -17,7 +17,7 @@ The course comprises of rougly 38.5 hours of non-legacy material, divided into 1
 
 **Section 1** : 1st Sept, 2019 :heavy_check_mark:  
 **Section 2** : 6th Sept, 2019 :heavy_check_mark:  
-**Section 3** : 8th Sept, 2019  
+**Section 3** : 8th Sept, 2019 :heavy_check_mark:  
 **Section 4** : 15th Sept, 2019  
 **Section 5** : 22nd Sept, 2019  
 **Section 6** : 27th Sept, 2019  
