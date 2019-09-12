@@ -11,11 +11,19 @@ class MyHomePage extends StatelessWidget {
           title: Text("Finance App"),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Card(
-              child: Text("Chart"),
+              color: Colors.blue,
+              child: Container(
+                child: Text("Chart"),
+                width: double.infinity,
+              ),
+              elevation: 5,
             ),
             Card(
+              color: Colors.red,
               child: Text("List of transactions"),
             )
           ],
