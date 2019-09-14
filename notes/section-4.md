@@ -28,3 +28,14 @@
 - Column takes the size of its widest child.
 - ```Column``` and ```Row``` are core widgets in flutter.
 - ```mainAxisAlignment``` and ```crossAxisAlignment``` are used to position items in a row/column. Main axis is the vertical axis for a column and the horizontal axis for a row, vice versa.
+
+**When a datatype is complex, such as in the scenairo of storing an entire transaction -- price, item, transaction id etc, it is advisable to create a Class for that datatype, along with a constructor for object initilization. Then a list of class objects can be declared.**  
+
+## Basics and Styling
+
+- ```@required```` is a Flutter keyword, dart files need to import flutter to use it.
+- ```DateTime``` is an inbuilt complex datatype in Dart/Flutter.
+- Styling in flutter works through arguments passed to widgets.
+- ```margin: EdgeInsets.symmetric(vertical: 10, horizontal: 50),``` -- example of a margin specification argument.
+- ```decoration``` and ```padding``` are other properties used to style a ```Container```. Check code for execution.
+- ```style``` is an argument to style ```Text```.
