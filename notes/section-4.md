@@ -45,6 +45,28 @@
 - Container gives rich alignment and styling options, no styling options for column/row apart from alignment.
 - Flexible height-width available for container, while column/row take maximum height/width available respectively.
 
-**$ sign has special meaning for Dart, used to write text+variable in line. Syntax : ```${object.property}```**
+**$ sign has special meaning for Dart, used to write text+variable in line. Syntax : ```${object.property}```**  
 
 DateTime formatting can be one in Dart effectively using the ```DateFormat()``` class from ```intl``` package. No native capabilities in Flutter.
+
+## Getting User Input
+
+- ```TextField``` widget used.
+- Values entered can be stored as variables stateless widget classes, though the value entered is not reflected in changes on the user interface.
+- Another way, and the better way of handling text field inputs is to use a controller. Controllers are objects created from the ```TextEditingController()``` class. These are binded to a text field using the ```controller``` argument, text can be accessed using ```controllerName.text```.
+
+## Splitting into Widgets
+
+- While creating a stateful widgets, only put those elements that need updation on screen in it.
+- Advisable to create folders -- ```models``` and ```widgets``` for models and widgets respectively.
+- The key idea is to change only the essentials, and lift state up whenever required. Multiple levels of sub-widgets can be constructed when lifting state up.
+
+```double.parse(source)``` and ```int.parse(source)``` used to convert string to double and int respectively.
+
+## Scrolling
+- **```SingleChildScrollView```** is used, other widgets wrapped into it for scrolling.
+- This widget needs to know what is the height available to it, hence should be declared in a container with height specified, won't work otherwise.
+- Can also be declared as the root in ```home``` for ```Scaffold```, in this case, it takes the height of the device screen as the scrollable height.
+- **```ListView```** is a widget which is essentially a column with ```SingleChildScrollView```. It also requires a height specification. **It can also additionally hold multiple children.**
+- **```ListView.builder** is a special kind of list view that only builds objects that are currently being displayed on screen. Saves memory. Should be used for cases where number of list items is large or not known.
+- Declared with an ```itemBuilder(context, index) {return}``` method, and an ```itemCount:``` property.
