@@ -7,7 +7,6 @@
 - A detailed look at widgets.
 - Working with images and fonts.
 
-
 ## Widgets
 
 - ```MaterialApp``` and ```Scaffold``` are to android, what ```CupuertinoApp``` and ```CupertinoPageScaffold``` are to iOS.
@@ -33,9 +32,19 @@
 
 ## Basics and Styling
 
-- ```@required```` is a Flutter keyword, dart files need to import flutter to use it.
+- ```@required``` is a Flutter keyword, dart files need to import flutter to use it.
 - ```DateTime``` is an inbuilt complex datatype in Dart/Flutter.
 - Styling in flutter works through arguments passed to widgets.
 - ```margin: EdgeInsets.symmetric(vertical: 10, horizontal: 50),``` -- example of a margin specification argument.
 - ```decoration``` and ```padding``` are other properties used to style a ```Container```. Check code for execution.
 - ```style``` is an argument to style ```Text```.
+
+## Container vs Column/Row
+
+- Container takes only one child widget.
+- Container gives rich alignment and styling options, no styling options for column/row apart from alignment.
+- Flexible height-width available for container, while column/row take maximum height/width available respectively.
+
+**$ sign has special meaning for Dart, used to write text+variable in line. Syntax : ```${object.property}```**
+
+DateTime formatting can be one in Dart effectively using the ```DateFormat()``` class from ```intl``` package. No native capabilities in Flutter.
