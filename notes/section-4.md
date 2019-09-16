@@ -70,3 +70,52 @@ DateTime formatting can be one in Dart effectively using the ```DateFormat()``` 
 - **```ListView```** is a widget which is essentially a column with ```SingleChildScrollView```. It also requires a height specification. **It can also additionally hold multiple children.**
 - **```ListView.builder** is a special kind of list view that only builds objects that are currently being displayed on screen. Saves memory. Should be used for cases where number of list items is large or not known.
 - Declared with an ```itemBuilder(context, index) {return}``` method, and an ```itemCount:``` property.
+
+## Input Specifications
+
+- ```keyboardType:``` property of TextField allows us to specify what kind of input we want, including dates, numeric input, email, standard input etc.
+- When dealing with ```onSubmitted:``` property of TextField and likewise, text argument is passed as a String to our function which may or may not be useful for us. If it isn't useful and we wish to drop it, the accepted way of doing that is using an anonymous function as ```(_) => funtionName```.
+- ```toStringAsFixed(fraction_length)``` used to get numbers with fixed fraction length.
+
+## AppBar and Floating Buttons
+
+- AppBar buttons can be created in ```action: <Widgets>[]``` property of the AppBar.
+- Icons are popular as buttons here, and can be added using ```IconButton(icon : Icon(Icons.which_icon))```.
+- Floating buttons can be added to the screen as a different property ```floatingActionButton:``` in  Scaffold, besides ```appBar:``` and ```body:```.
+- ```floatingActionButtonLocation:``` propery of Scaffold is used to specify the location of the floating button.
+
+## Modal Sheet
+
+- A modal sheet can be coded using ```showModalBottomSheet(context: CONTEXT, builder : (_) {FUNCTION})```
+- ```GestureDetector(onTap: () {},child: functionToExecute(),behavior: HitTestBehavior.opaque,``` is used to detect gesture inside a modal sheet and close modal sheet on registering a tap outside it.
+- **```Navigator.of(context).pop();```** is used in, say, a submit button to return user to previous interaction on submission. (*close modal sheet*)
+
+**Sometimes, we might need to convert a Stateless Widget to a Stateful one even if we aren't calling setState, as Flutter might need that to work properly in the backend.**  
+
+**```widget.``` allows us to access the properties of the Widget Class inside it's State Class.**  
+
+## Using Themes
+
+- ```themes:``` is a property for ```MaterialApp```, which can later be used throughout the application by using the context.
+- Example of theme specification :
+
+```dart
+theme: ThemeData(
+  primarySwatch: Colors.purple,
+  accentColor: Colors.amber,
+  ),
+  ```
+
+- Primary and secondary color can be accessed using : ```color: Theme.of(context).primaryColor```, variations in shades are also available and customizable.
+- ```appBarTheme:``` can be specified differently.
+
+## Fonts and Text Themes
+
+- Add font's ttf file to a ```fonts``` folder in assets.
+- Find commented out ```font``` section in the pubspec file and add font as specified in the syntax.
+- Weights needs to be added for ```bold``` fonts, as per information available in font documentation, or specification on google fonts.
+- In declared ```theme: ThemeData()```, add ```fontFamily: 'FontName'```. This would automatically make the app use this font throughout.
+- To specify other fonts for text, use ```style:TextStyle(fontFamily: 'Font Name')```
+- ```textTheme:``` can be declared in ThemeData as well.
+- A ton of other specifications -- in codefiles.
+
