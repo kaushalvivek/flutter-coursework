@@ -119,3 +119,15 @@ theme: ThemeData(
 - ```textTheme:``` can be declared in ThemeData as well.
 - A ton of other specifications -- in codefiles.
 
+## Adding Images
+
+```dart
+Image.asset(
+  'assets/images/waiting.png',
+  fit: BoxFit.cover,
+)
+```
+- Syntax to add images, source path also needs to be added to teh pubspec file.
+- ```fit: BoxFit.cover,``` makes the image take the size of the container.
+
+**SizedBox(height: 20,),** are used as separators, they are empty boxes with no content inside. Essentially a container, with no content.
