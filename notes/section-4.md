@@ -130,4 +130,16 @@ Image.asset(
 - Syntax to add images, source path also needs to be added to teh pubspec file.
 - ```fit: BoxFit.cover,``` makes the image take the size of the container.
 
-**SizedBox(height: 20,),** are used as separators, they are empty boxes with no content inside. Essentially a container, with no content.
+**SizedBox(height: 20,),** are used as separators, they are empty boxes with no content inside. Essentially a container, with no content.  
+
+```.where( () {})``` after a list allows us to perform a function on each item of that list and return a boolean. Note that ```where``` returns an iterable, would need converting.  
+
+**```Stack()``` widget allows us to stack widgets on top of each other 3-dimensionally.**  
+
+```color: Color.fromRGBO(r, g, b, opacity)``` another way to enter color. RGB values from 0-255 and 0-1 for opacity.  
+
+```FractionallySizedBox(heightFactor: 0-1)``` allows us to create a box which is a fraction of its parent's size. The fraction value is the heightFactor specified.  
+
+```.fold()``` allows us to change a list to another type based on the logic we pass in fold.  
+
+```(data['amount'] as double)``` example of type-casting in Dart.  
