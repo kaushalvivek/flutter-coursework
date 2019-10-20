@@ -18,7 +18,7 @@ The course comprises of roughly 38.5 hours of non-legacy material, divided into 
 **Section 1** :heavy_check_mark:  
 **Section 2** :heavy_check_mark:  
 **Section 3** :heavy_check_mark:  
-**Section 4**  
+**Section 4** :heavy_check_mark:  
 **Section 5**  
 **Section 6**  
 **Section 7**  

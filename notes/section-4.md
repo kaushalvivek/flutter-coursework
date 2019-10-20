@@ -149,4 +149,14 @@ Image.asset(
 - ```Padding``` is an alternative for container, when we are adding ```Container``` only for padding. It is simpler.
 - ```Expanded``` is basically a ```Flexible``` widget with ```fit: FlexFit.tight```.
 - ```ListTile``` widget is an interesting time and effort saver widget and great for listing stuff.
+- Flutter provides an inbuilt date picker in :
+
+```dart
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2019),
+      lastDate: DateTime.now(),
+    );```
+
 - 
