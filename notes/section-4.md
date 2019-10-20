@@ -143,3 +143,10 @@ Image.asset(
 ```.fold()``` allows us to change a list to another type based on the logic we pass in fold.  
 
 ```(data['amount'] as double)``` example of type-casting in Dart.  
+
+- The widget ```Flexible``` is a great way of ditributing free space between widgets in a column or a row.
+- ```FittedBox``` shrinks inside content without letting things overflow.
+- ```Padding``` is an alternative for container, when we are adding ```Container``` only for padding. It is simpler.
+- ```Expanded``` is basically a ```Flexible``` widget with ```fit: FlexFit.tight```.
+- ```ListTile``` widget is an interesting time and effort saver widget and great for listing stuff.
+- 
