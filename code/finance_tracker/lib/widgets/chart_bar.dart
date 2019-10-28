@@ -46,6 +46,9 @@ class ChartBar extends StatelessWidget {
         SizedBox(
           height: 4,
         ),
+        Text(
+          label.substring(0, 1),
+        ),
       ],
     );
   }
