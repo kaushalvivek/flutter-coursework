@@ -7,3 +7,5 @@
 - ```constraint``` is an important parameter passed to the ```LayoutBuilder``` widget, which essentially contains MaxHeight, MinHeight, MaxWidth, MinWidth -- calculated dynamically from a widget's surrounding.
 - ```SystemChrome.setPreferredOrientations([DeviceOrientation.<>]);```  can be used to set allowed device orientations.
 - ```MediaQuery.of(context).orientation == Orientation.landscape;``` to get orientation.
+- To get mobile os, use ```imoprt 'dart:io';``` and ```Platform.isIOS```
+- ```SafeArea``` is a container widget that makes sure that all content inside is placed with respect to the surrounding spaces.
